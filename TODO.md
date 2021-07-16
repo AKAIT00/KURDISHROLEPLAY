@@ -6,7 +6,7 @@ In `index.html`, add this code on the line after the comment with `ADD BUTTON HE
 
 ```html
 <button>
-    Click me!
+  Click me!
 </button>
 ```
 

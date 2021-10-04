@@ -10,15 +10,15 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
-  text-align: center;
-  background: url("https://cdn.glitch.com/5b75e0f2-6ba0-42a7-97ad-5c2c92acfeb6%2Fspace-1548139_1920.jpg?v=1626359188586");
+  padding: 180px;
+  text-align: left;
+  background: url("https://media.discordapp.net/attachments/843102362150633493/894690584369963078/20210612_184443.jpg");
   color: white;
 }
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 0px;
 }
 
 /* Style the top navigation bar */
@@ -33,7 +33,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 40px 20px;
   text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ body {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: #1a1a1a;
-  padding: 20px;
+  padding: 200px;
   color: white;
 }
 
@@ -84,7 +84,7 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 800px;
   text-align: left;
   background: black;
   color: #d8ccff;

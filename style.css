@@ -1,438 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: "Saira", sans-serif;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  padding: 180px;
-  text-align: left;
-  background: url("https://media.discordapp.net/attachments/843102362150633493/894690584369963078/20210612_184443.jpg");
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 0px;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: black;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  text-decoration: none;
-}
-
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #290099;
-  color: black;
-}
-
-/* Column container */
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #0d0d0d;
-  padding: 20px;
-  color: yellow;
-}
-
-/* Main column */
-.main {
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: #1a1a1a;
-  padding: 200px;
-  color: black;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 300px;
-  text-align: center;
-  background: black;
-  color: #d8ccff;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-
-a {
-  color: #7c4dff;
-}
-a:hover {
-  color: #ece6ff;
-}
-
-.fa {
-  padding: 4px;
-  font-size: 20px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-youtube {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-discord {
-  background: #125688;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
-
-
-////////
-
-{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.full-page
-{
-    height: 100vh;
+
+body {
     width: 100%;
-    background: linear-gradient(white,rgba(0,0,0,0.9));
-    position: absolute;
-}
-.navbar
-{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 10px;
-}
-.logo a
-{
-    text-decoration: none;
-    color: coral;
-    font-size: 20px;
-    font-family: 'Dancing Script', cursive;
-}
-nav
-{
-    flex: 1;
-    text-align: right;
-    padding-top: 6px;
-}
-nav ul 
-{
-    display: inline-block;
-    list-style: none;
-}
-nav ul li
-{
-    display: inline-block;
-    margin-right: 70px;
-}
-nav ul li a
-{
-    text-decoration: none;
-    font-size: 20px;
-    color: coral;
-    font-family: sans-serif;
-}
-nav ul li button
-{
-    font-size: 20px;
-    color: coral;
-    outline: none;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    font-family: sans-serif;
-}
-.sub-page
-{
-    width: 1266px;
-    height: 550px;
-    position: absolute;
-    background: url(abc.png);
-    background-size: cover;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(bg.jpg);
     background-position: center;
-    left: 50px;
-    top: 70px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.overlay
-{
+
+.container {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+.container .login-social a i {
+    margin-right: 5px;
+}
+
+.container .login-social a.facebook {
+    background: #4267B2;
+}
+
+.container .login-social a.twitter {
+    background: #1DA1F2;
+}
+
+.container .login-social a.google-plus {
+    background: #db4a39;
+}
+
+.container .login-social a.linkedin {
+    background: #0e76a8;
+}
+
+.container .login-social a.facebook:hover {
+    background: #3d5fa3;
+}
+
+.container .login-social a.twitter:hover {
+    background: #1991db;
+}
+
+.container .login-social a.google-plus:hover {
+    background: #ca4334;
+}
+
+.container .login-social a.linkedin:hover {
+    background: #0b5c81;
+}
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .login-email .input-group input {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5),white);
-    opacity: 0;
-    transition: 1s;
-}
-.sub-page:hover .overlay
-{
-    opacity: 1;
-}
-.text
-{
-    text-align: center;
-    color: white;
-    padding-right: 350px;
-    padding-left: 350px;
-    font-size: 20px;
-    font-family: 'Chilanka', cursive;
-    transform: translateY(-220%);
-    opacity: 0;
-    transition: 1s;
-}
-.sub-page:hover .text
-{
-    opacity: 1;
-}
-#login-form
-{
-    display: none;
-}
-.form-box
-{
-    width: 300px;
-    height: 400px;
-    position: relative;
-    top: 90px;
-    left: 210px;
-    background: rgba(0,0,0,0.6);
-}
-.close 
-{
-    position: relative;
-    left: 270px;
-    bottom: 0;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-.close:hover,.close:focus 
-{
-    color: red;
-    cursor: pointer;
-}
-.main-heading
-{
-    color: orangered;
-    padding-bottom: 20px;
-}
-.form
-{
-    position: relative;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    bottom: 20px;
-}
-.form input, .form1 input
-{
-    font-family: sans-serif;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
     outline: none;
-    border: none;
-    border-bottom: 1px solid black;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
+
+.container .login-email .input-group .btn {
+    display: block;
     width: 100%;
-    margin: 0 0 15px;
-    padding: 15px;
-    font-size: 14px;
-}
-.form button, .form1 button
-{
-    font-family: sans-serif;
-    width: 100%;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 15px;
-    border: none;
-    background: coral;
-}
-.form .asking
-{
-    font-size: 12px;
-    margin: 15px 0 0;
-    color: white;
-}
-.form .asking a
-{
-    color: orangered;
-    text-decoration: none;
-}
-#register-form
-{
-    display: none;
-}
-.form-box1
-{
-    width: 300px;
-    height: 400px;
-    position: absolute;
-    bottom: 90px;
-    left: 860px;
-    background: rgba(0,0,0,0.6);
-}
-.main-heading
-{
-    color: orangered;
-    padding-bottom: 20px;
-}
-.form1
-{
-    position: relative;
-    margin: 0 auto 100px;
-    padding: 45px;
+    padding: 15px 20px;
     text-align: center;
-    bottom: 20px;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
 }
